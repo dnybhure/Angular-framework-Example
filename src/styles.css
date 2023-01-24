@@ -9,3 +9,6 @@ textarea {
   display: flex;
   flex-flow: wrap;
 }
+.center-align {
+  text-align: center;
+}

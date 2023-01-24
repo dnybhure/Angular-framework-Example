@@ -1,5 +1,9 @@
 <form [formGroup]="improvementForm" novalidate>
-  <button type="button" (click)="addwentWellNotes()" class="btn btn-success">
+  <button
+    type="button"
+    (click)="addwentWellNotes()"
+    class="btn btn-success mt-3 center-align"
+  >
     What can be Improved
   </button>
   <div formArrayName="improvements" class="noteSection">
@@ -13,7 +17,6 @@
           class="form-control"
           formControlName="improvement"
         ></textarea>
-        <button (click)="removeImprovementsNotes(i)">Remove</button>
       </div>
     </div>
   </div>

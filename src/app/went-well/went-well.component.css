@@ -1,0 +1,7 @@
+.mt-3 {
+  display: inline-block;
+}
+.noteSection {
+  display: flex;
+  flex-flow: wrap;
+}

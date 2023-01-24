@@ -1,0 +1,21 @@
+<form [formGroup]="wentWellForm" novalidate>
+  <button type="button" (click)="addwentWellNotes()" class="btn btn-success">
+    What went well
+  </button>
+
+  <div formArrayName="wentWellControls" id="arraygroup" class="noteSection">
+    <div
+      *ngFor="let data of wentWellControls.controls; let i = index"
+      class="col-lg-2"
+    >
+      <div [formGroupName]="i" class="mt-3">
+        <textarea
+          type="text"
+          class="form-control"
+          formControlName="wentWell"
+        ></textarea>
+        <button (click)="removeWentWellNotes(i)">Remove</button>
+      </div>
+    </div>
+  </div>
+</form>

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { WentWellComponent } from './went-well/went-well.component';
 import { ImprovementComponent } from './improvement/improvement.component';
+import { ActionItemComponent } from './action-item/action-item.component';
+import { StartDoingComponent } from './start-doing/start-doing.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
@@ -14,6 +16,8 @@ import { ImprovementComponent } from './improvement/improvement.component';
     HelloComponent,
     WentWellComponent,
     ImprovementComponent,
+    ActionItemComponent,
+    StartDoingComponent,
   ],
   bootstrap: [AppComponent],
 })

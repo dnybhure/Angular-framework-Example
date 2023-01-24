@@ -29,5 +29,9 @@ export class ImprovementComponent implements OnInit {
   }
   addwentWellNotes() {
     this.improvements.push(this.newImprovementNotes());
+    console.log(this.improvements.length);
+    setTimeout(() => {
+      document.getElementById(`${this.improvements.length - 1}`).focus();
+    }, 100);
   }
 }

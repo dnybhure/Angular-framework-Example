@@ -9,5 +9,5 @@ textarea {
   flex-flow: wrap;
 }
 .center-align {
-  text-align: center;
+  margin: auto;
 }

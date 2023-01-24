@@ -1,0 +1,10 @@
+.ml-10 {
+  margin-right: 10px;
+}
+textarea {
+  background-color: #ffc1078f;
+}
+.noteSection {
+  display: flex;
+  flex-flow: wrap;
+}

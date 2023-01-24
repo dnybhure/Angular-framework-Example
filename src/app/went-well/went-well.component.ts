@@ -29,7 +29,9 @@ export class WentWellComponent implements OnInit {
   addwentWellNotes() {
     this.wentWellControls.push(this.newWentWellNotes());
     setTimeout(() => {
-      document.getElementById(`${this.wentWellControls.length - 1}`).focus();
+      document
+        .getElementById(`wentWellNotes${this.wentWellControls.length - 1}`)
+        .focus();
     }, 100);
   }
 }

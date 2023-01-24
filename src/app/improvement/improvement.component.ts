@@ -31,7 +31,9 @@ export class ImprovementComponent implements OnInit {
     this.improvements.push(this.newImprovementNotes());
     console.log(this.improvements.length);
     setTimeout(() => {
-      document.getElementById(`${this.improvements.length - 1}`).focus();
+      document
+        .getElementById(`improvement${this.improvements.length - 1}`)
+        .focus();
     }, 100);
   }
 }
